@@ -13,32 +13,33 @@ import androidx.recyclerview.widget.RecyclerView
 
 class SelectionActivity : AppCompatActivity() {
 
+    companion object {
+        val ITEM_KEY = "key"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.title = "Selector"
+
         val items = generateTestData()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val imageView = findViewById<ImageView>(R.id.imageView)
-        val textView = findViewById<TextView>(R.id.textView)
+
 
         recyclerView.layoutManager = GridLayoutManager(this, 3)
 
-        // View.OnClickListener is created in the activity
-        // and then passed to adapter
-        // This allows the onClick() callback
-        // to have access to the activity's members
-            val onClickListener = View.OnClickListener {
+        val onClickListener = View.OnClickListener {
             val itemPosition = recyclerView.getChildAdapterPosition(it)
 
-            imageView.setImageResource(items[itemPosition].resourceId)
-            textView.text = items[itemPosition].description
+            // Item object can be placed directly inside Intent because
+            // the Item class implements the Parcelable interface
+            val launchIntent = Intent(this, DisplayActivity::class.java)
+                .putExtra(ITEM_KEY, items[itemPosition])
 
+            startActivity(launchIntent)
         }
-
-
 
         recyclerView.adapter = ImageAdapter(items, onClickListener)
     }
