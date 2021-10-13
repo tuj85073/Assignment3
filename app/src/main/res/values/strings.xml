@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Fruit App</string>
+    <string name="instructions_click_an_image_below_to_view">Instructions:Click an image below to view</string>
+    <string name="Selector">Selector</string>
+    <string name="Displayer">Display-er</string>
+    <string name="Apple">Apple</string>
+    <string name="Banana">Banana</string>
+    <string name="Kiwi">Kiwi</string>
+    <string name="Peach">Peach</string>
+    <string name="Mango">Mango</string>
+    <string name="Lemon">Lemon</string>
+    <string name="Lychee">Lychee</string>
+    <string name="Pears">Pears</string>
+    <string name="Watermelon">Watermelon</string>
+    <string name="DragonFruit">Dragon Fruit</string>
+
+
 </resources>

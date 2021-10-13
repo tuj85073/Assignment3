@@ -21,10 +21,9 @@ class SelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.title = "Selector"
+        supportActionBar?.title = getString(R.string.Selector)
 
         val items = generateTestData()
-
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
 
@@ -46,16 +45,16 @@ class SelectionActivity : AppCompatActivity() {
 
     // Test data
     fun generateTestData(): Array<Item> {
-        return arrayOf(Item(R.drawable.apple, "Apple")
-            , Item(R.drawable.banana,"Banana")
-            , Item(R.drawable.kiwi,"Kiwi")
-            , Item(R.drawable.peach,"Peach")
-            , Item(R.drawable.mango,"Mango")
-            , Item(R.drawable.lemon,"Lemon")
-            , Item(R.drawable.lychee,"Lychee")
-            , Item(R.drawable.pears,"Pears")
-            , Item(R.drawable.watermelon,"Watermelon")
-            , Item(R.drawable.dragon,"Dragon Fruit"))
+        return arrayOf(Item(R.drawable.apple, getString(R.string.Apple))
+            , Item(R.drawable.banana,getString(R.string.Banana))
+            , Item(R.drawable.kiwi,getString(R.string.Kiwi))
+            , Item(R.drawable.peach,getString(R.string.Peach))
+            , Item(R.drawable.mango,getString(R.string.Mango))
+            , Item(R.drawable.lemon,getString(R.string.Lemon))
+            , Item(R.drawable.lychee,getString(R.string.Lychee))
+            , Item(R.drawable.pears,getString(R.string.Pears))
+            , Item(R.drawable.watermelon,getString(R.string.Watermelon))
+            , Item(R.drawable.dragon,getString(R.string.DragonFruit)))
     }
 
 
