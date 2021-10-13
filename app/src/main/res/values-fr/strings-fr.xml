@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fruit App</string>
+    <string name="instructions_click_an_image_below_to_view">Instructions:Cliquez sur une image ci-dessous pour voir</string>
+    <string name="Selector">Sélecteur</string>
+    <string name="Displayer">Afficheur</string>
+    <string name="Apple">Pomme</string>
+    <string name="Banana">Banane</string>
+    <string name="Kiwi">Kiwi</string>
+    <string name="Peach">Pêche</string>
+    <string name="Mango">Mangue</string>
+    <string name="Lemon">Citron</string>
+    <string name="Lychee">Litchi</string>
+    <string name="Pears">Poires</string>
+    <string name="Watermelon">Pastèque</string>
+    <string name="DragonFruit">Pitaya</string>
+
+
+
+</resources>
